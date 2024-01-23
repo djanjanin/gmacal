@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Scheduling Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .calendar {
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .calendly-widget {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Family Call Scheduler</h1>
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/u/0/embed?src=c_9e4766f122c05035c4e0d5de693c10ade43c6cc2b1b6cdbcd49e2abf3eb01a12@group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="calendly-widget">
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/janjanin/30min'});return false;">Schedule a Call</a>
+        </div>
+    </div>
+
+    <!-- Calendly link widget - paste this in your HTML file where you want the widget to appear -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+</body>
+</html>
